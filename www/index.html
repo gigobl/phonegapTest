@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>   
+	    <meta charset="UTF-8" />
+	    <title>miniVijesti</title>
+	    
+	</head>
+<body>
+
+<div data-role="page" id="mainPage">
+
+    <div data-role="header" data-position="fixed">
+        <h1>miniVijesti</h1>
+    </div>
+
+    <div data-role="content">    
+       <div id="newsSourceSelect">    		
+      
+    			<form action="rss.html" method="get" name="forma" id="forma">
+    			<h3>Izvori vijesti:</h3>
+    			<select name="addressList" id="addressList">
+    				<!-- popunjava se iz baze -->
+            <option></option>
+    			</select>
+    			
+    			<input id="btnLoadNews" type="button" value="Učitaj vijesti" onclick="javascript:loadNews();"/>    			
+    		</form>	   		
+    	</div>
+    	<div>
+    		<input type="button" value="Izvori vijesti"  onclick="window.location='sources.html'"/>
+    		<input type="button" value="Poruke"  onclick="window.location='readLink.html'"/>
+    		<input type="button" value="Info"  onclick="window.location='info.html'"/>
+     	</div>
+        
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4 id="footer"></h4>
+    </div> 
+</div>
+</body>
+</html>
